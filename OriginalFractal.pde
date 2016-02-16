@@ -1,19 +1,25 @@
 public void setup()
 {
-	size(600, 600);
+  size(600, 600);
 }
+
 public void draw()
 {
-	fractal(300, 300, 400);
+  background(0);
+  myFractal(width, height, width);
 }
-public void fractal(int x, int y, int r)
+
+public void myFractal(int x, int y, int r)
 {
-	if (r > 10)
-	{
-		ellipse(x, y, r, r);
-	}
-	else 
-	{
-		
-	}
+  noFill();
+  stroke(255);
+  ellipse(x/2, y/2, r, r);
+    
+  if (r > 20) 
+  {
+    myFractal(x-r/2, y, r/2);
+    myFractal(x, y-r/2, r/2);
+    myFractal(x+r/2, y, r/2);
+    myFractal(x, y+r/2, r/2);
+  }
 }
