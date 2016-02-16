@@ -15,7 +15,7 @@ public void myFractal(int x, int y, int r)
 	stroke(255);
 	ellipse(x/2, y/2, r, r);
     
-  	if (r > 10) 
+  	if (r > 15) 
   	{
 	    myFractal(x-r/2, y, r/2);
 	    myFractal(x, y-r/2, r/2);
