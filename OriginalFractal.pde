@@ -11,8 +11,7 @@ public void draw()
 
 public void myFractal(int x, int y, int r)
 {
-	//noFill();
-	stroke(255);
+	//noStroke();
 	ellipse(x/2, y/2, r, r);
     
   	if (r > 15) 
