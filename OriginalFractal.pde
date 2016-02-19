@@ -11,10 +11,10 @@ public void draw()
 
 public void myFractal(int x, int y, int r)
 {
-	//noStroke();
+	noStroke();
 	ellipse(x/2, y/2, r, r);
     
-  	if (r > 15) 
+  	if (r > 20) 
   	{
   		fill(100, 125, 230);
 	    myFractal(x-r/2, y, r/2);
